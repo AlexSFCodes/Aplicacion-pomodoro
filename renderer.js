@@ -37,13 +37,13 @@ function actualizarDisplay() {
 function actualizarModoTexto() {
     switch(modoActual) {
         case 'pomodoro':
-            modoTexto.textContent = '📘 Tiempo de enfoque - Trabaja';
+            modoTexto.textContent = ' Tiempo de enfoque - Trabaja';
             break;
         case 'short':
-            modoTexto.textContent = '☕ Descanso corto - Relájate 5 min';
+            modoTexto.textContent = ' Descanso corto - Relájate 5 min';
             break;
         case 'long':
-            modoTexto.textContent = '🌿 Descanso largo - Toma 15 min';
+            modoTexto.textContent = ' Descanso largo - Toma 15 min';
             break;
     }
 }
