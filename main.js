@@ -16,7 +16,7 @@ function createWindow() {
         }
     });
     
-    // Quitar advertencias de seguridad en desarrollo
+   
     process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
     
     win.loadFile('index.html');

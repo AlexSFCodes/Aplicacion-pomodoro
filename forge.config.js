@@ -1,9 +1,11 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+const path = require('path');
 
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: path.join(__dirname, 'logo'),
     ignore: [
       /^\/out($|\/)/,
       /^\/dist($|\/)/
@@ -13,7 +15,10 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        setupIcon: path.join(__dirname, 'logo.ico'),
+        iconUrl: 'https://raw.githubusercontent.com/AlexSFCodes/Aplicaci-n-pomodoro/main/logo.ico'
+      },
     },
     {
       name: '@electron-forge/maker-zip',

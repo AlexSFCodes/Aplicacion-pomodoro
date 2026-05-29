@@ -1,6 +1,6 @@
 # 🍅 Pomodoro Timer App
 
-![Pomodoro App](APP.png)
+![Pomodoro App](logo.ico)
 
 Aplicación de escritorio para la técnica Pomodoro con alarma integrada. Mejora tu productividad trabajando en intervalos de 25 minutos con descansos activos.
 
