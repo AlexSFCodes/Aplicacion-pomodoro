@@ -4,41 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styless.css">
-    <title>Pomodoro Timer · Electron</title>
+    <title>Pomodoro Timer</title>
 </head>
 <body>
     <div class="contenedor-padre">
-        <h1 class="Titulo">🍅 Pomodoro APP</h1>
-
-        <div class="cronometro">
-            <span id="minutos">25</span>
-            <span class="separador">:</span>
+        <h1 class="Titulo">Pomodoro APP</h1>
+        
+        <div class="timer">
+            <span id="minutos">20</span>
+            <span>:</span>
             <span id="segundos">00</span>
         </div>
-
-        <div class="estado-sesion">
-            <span id="modo-actual">🍅 Tiempo de enfoque</span>
+        
+        <div id="modo-texto">📘 Tiempo de enfoque</div>
+        
+        <div class="botones">
+            <button id="iniciar">▶ Iniciar</button>
+            <button id="pausar">⏸ Pausar</button>
+            <button id="reset">🔄 Reset</button>
         </div>
-
-        <div class="controles">
-            <button id="btn-iniciar" class="btn btn-primario">▶ Iniciar</button>
-            <button id="btn-pausar" class="btn btn-secundario" disabled>⏸ Pausar</button>
-            <button id="btn-reiniciar" class="btn btn-terciario">⟳ Reiniciar</button>
+        
+        <div class="modos">
+            <button class="modo-btn active" data-modo="pomodoro">🍅 Pomodoro</button>
+            <button class="modo-btn" data-modo="short">☕ Descanso corto</button>
+            <button class="modo-btn" data-modo="long">🌿 Descanso largo</button>
         </div>
-
-        <div class="config-rapida">
-            <button class="btn-ciclo activo" data-tipo="pomodoro">🍅 Pomodoro (25m)</button>
-            <button class="btn-ciclo" data-tipo="shortBreak">☕ Descanso corto (5m)</button>
-            <button class="btn-ciclo" data-tipo="longBreak">🌿 Descanso largo (15m)</button>
-        </div>
-
-        <div class="info-ciclos">
-            <p>📊 Ciclo # <span id="contador-ciclos">0</span> · 
-               🧠 <span id="mensaje-motivacion">Listo para empezar</span>
-            </p>
+        
+        <div class="stats">
+            🎯 Ciclos completados: <span id="contador">0</span>
         </div>
     </div>
-
-    <script src="renderer.js"></script>
+    <script src="render.js"></script>
 </body>
 </html>
