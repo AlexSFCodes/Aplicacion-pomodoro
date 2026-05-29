@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <title>Pomodoro Timer · Electron</title>
+</head>
+<body>
+    <div class="contenedor-padre">
+        <h1 class="Titulo">🍅 Pomodoro APP</h1>
+
+        <div class="cronometro">
+            <span id="minutos">25</span>
+            <span class="separador">:</span>
+            <span id="segundos">00</span>
+        </div>
+
+        <div class="estado-sesion">
+            <span id="modo-actual">🍅 Tiempo de enfoque</span>
+        </div>
+
+        <div class="controles">
+            <button id="btn-iniciar" class="btn btn-primario">▶ Iniciar</button>
+            <button id="btn-pausar" class="btn btn-secundario" disabled>⏸ Pausar</button>
+            <button id="btn-reiniciar" class="btn btn-terciario">⟳ Reiniciar</button>
+        </div>
+
+        <div class="config-rapida">
+            <button class="btn-ciclo activo" data-tipo="pomodoro">🍅 Pomodoro (25m)</button>
+            <button class="btn-ciclo" data-tipo="shortBreak">☕ Descanso corto (5m)</button>
+            <button class="btn-ciclo" data-tipo="longBreak">🌿 Descanso largo (15m)</button>
+        </div>
+
+        <div class="info-ciclos">
+            <p>📊 Ciclo # <span id="contador-ciclos">0</span> · 
+               🧠 <span id="mensaje-motivacion">Listo para empezar</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
