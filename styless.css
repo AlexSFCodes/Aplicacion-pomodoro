@@ -48,6 +48,7 @@ body {
     color: #ffd966;
     margin: 10px 0;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .botones {
@@ -123,4 +124,26 @@ body {
     color: #f39c12;
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.boton-silenciar {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.boton-silenciar:hover {
+    transform: scale(1.02);
+}
+
+#indicador-sonido {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    display: inline-block;
 }

@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styless.css">
-    <title>Pomodoro Timer</title>
+    <title>Pomodoro Timer con Alarma</title>
 </head>
 <body>
     <div class="contenedor-padre">
         <h1 class="Titulo">Pomodoro APP</h1>
         
         <div class="timer">
-            <span id="minutos">20</span>
+            <span id="minutos">25</span>
             <span>:</span>
             <span id="segundos">00</span>
         </div>
         
-        <div id="modo-texto">📘 Tiempo de enfoque</div>
+        <div id="modo-texto">📘 Tiempo de enfoque - Trabaja</div>
         
         <div class="botones">
             <button id="iniciar">▶ Iniciar</button>
@@ -25,15 +25,19 @@
         </div>
         
         <div class="modos">
-            <button class="modo-btn active" data-modo="pomodoro">🍅 Pomodoro</button>
-            <button class="modo-btn" data-modo="short">☕ Descanso corto</button>
-            <button class="modo-btn" data-modo="long">🌿 Descanso largo</button>
+            <button class="modo-btn active" data-modo="pomodoro"> Pomodoro</button>
+            <button class="modo-btn" data-modo="short"> Descanso corto</button>
+            <button class="modo-btn" data-modo="long"> Descanso largo</button>
         </div>
         
         <div class="stats">
-            🎯 Ciclos completados: <span id="contador">0</span>
+             Ciclos completados: <span id="contador">0</span>
+        </div>
+        
+        <div style="margin-top: 15px; text-align: center;">
+            <button id="silenciar" class="boton-silenciar">🔊 Silenciar alarma</button>
         </div>
     </div>
-    <script src="render.js"></script>
+    <script src="renderer.js"></script>
 </body>
 </html>
