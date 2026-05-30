@@ -12,7 +12,8 @@ function createWindow() {
         icon: path.join(__dirname, 'logo.ico'),
         webPreferences: {
             nodeIntegration: false,
-            contextIsolation: true
+            contextIsolation: true,
+            backgroundThrottling: false
         }
     });
     
